@@ -4,6 +4,8 @@ import Image from 'next/image';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import  { Suspense } from 'react';
+
 
 const Shop = () => {
   useEffect(() => {
@@ -65,7 +67,10 @@ const Shop = () => {
         </div>
 
 
-        <Product />
+       <Suspense fallback={<div>Loading products...</div>}>
+
+          <Product />
+          </Suspense>
       </div>
     </div>
   );
