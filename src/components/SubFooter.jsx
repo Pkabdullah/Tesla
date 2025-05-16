@@ -18,8 +18,8 @@ const SubFooter = () => {
                     <div className="flex justify-between items-center max-sm:flex-col">
 
                         <div className="max-w-[50%] max-sm:max-w-full">
-                            <div className="flex items-center mb-4">
-                                <h4 className="text-[17px] max-md:text-[15px] max-sm:text-[13px] font-medium">
+                            <div className="flex items-center mb-4 max-sm:flex max-sm:justify-center">
+                                <h4 className="text-[17px] max-md:text-[15px] max-sm:text-[12px] font-medium">
                                     Subscribe To Our News Letter
                                 </h4>
                                 <Image
@@ -31,12 +31,12 @@ const SubFooter = () => {
                                 />
                             </div>
 
-                            <h1 className="text-[50px] max-md:text-[35px] max-sm:text-[28px] font-semibold leading-tight">
+                            <h1 className="text-[50px] max-md:text-[35px] max-sm:text-[28px] font-semibold leading-tight max-sm:text-center">
                                 Stay <span className="text-[#3af96e]">charged</span> and stay<br />
                                 <span className="text-[#3af96e]">informed!</span>
                             </h1>
 
-                            <p className="text-[15px] max-md:text-[12px] max-sm:text-[11px] font-thin mt-4 leading-relaxed">
+                            <p className="text-[15px] max-md:text-[12px] max-sm:text-[11px] font-thin mt-4 leading-relaxed max-sm:text-center">
                                 Subscribe to our newsletter for the latest updates on EV technology,
                                 exclusive offers on top-notch chargers, and eco-friendly driving tips.
                                 Join our community of forward-thinkers committed to a sustainable future.
@@ -45,25 +45,31 @@ const SubFooter = () => {
                             </p>
                         </div>
                         <div className="ml-10">
-                            <div className="flex flex-col  items-center space-y-2 max-sm:mt-10">
+                            <div className="flex flex-col items-center space-y-4 max-sm:mt-10">
 
-                                <div className="flex space-x-4 max-sm:space-x-2">
-                                    <Image src="/subfooterimg1.png" alt="" width={164} height={164} className="max-md:w-[100px] max-md:h-[100px] max-sm:w-[80px] max-sm:h-[80px]" />
-                                    <Image src="/subfooterimg2.png" alt="" width={164} height={164} className="max-md:w-[100px] max-md:h-[100px] max-sm:w-[80px] max-sm:h-[80px]" />
-                                    <Image src="/subfooterimg3.png" alt="" width={164} height={164} className="max-md:w-[100px] max-md:h-[100px] max-sm:w-[80px] max-sm:h-[80px]" />
+                                <div className="flex  max-sm:space-x-2 ">
+                                    <Image src="/subfooterimg1.png" alt="" width={140} height={164} className="max-md:w-[100px] max-md:h-[100px] max-sm:w-[80px] max-sm:h-[80px]" />
+                                    <Image src="/subfooterimg2.png" alt="" width={140} height={164} className="max-md:w-[100px] max-md:h-[100px] max-sm:w-[80px] max-sm:h-[80px]" />
+                                    <Image src="/subfooterimg3.png" alt="" width={140} height={164} className="max-md:w-[100px] max-md:h-[100px] max-sm:w-[80px] max-sm:h-[80px]" />
                                 </div>
 
-                                <div className="flex border-3 max-md:border max-sm:border border-[#3af96e] rounded-3xl max-sm:flex-col max-sm:space-y-2 max-sm:items-center max-sm:w-full">
+                                <div className="flex items-center border-2 border-[#3af96e] rounded-3xl text-white  max-sm:space-x-1 max-sm:px-2 max-sm:py-1">
+
                                     <Input
                                         type="email"
                                         placeholder="Enter Your Email Address"
-                                        className="w-80 max-md:w-48 max-sm:w-[90%] rounded-full px-4 py-2 text-black border-none text-justify max-md:text-[12px] max-sm:text-[11px]"
+                                        className="w-80 max-md:w-48 max-sm:w-50 rounded-full px-4 py-2  text-black border-none text-[15px] max-md:text-[12px] max-sm:text-[10px]"
                                     />
-                                    <Button className="text-[15px] max-md:text-[11px] max-sm:text-[10px] px-10 py-5 max-md:py-3 max-sm:px-6 max-sm:py-2 bg-black border border-green-500 text-green-500 rounded-full hover:bg-green-500 hover:text-black transition-all">
+
+                                    <Button
+                                        className="text-[15px] max-md:text-[11px] max-sm:text-[8px] px-10 py-5 max-md:py-3  max-sm:px-6   bg-black border border-green-500 text-green-500 rounded-full hover:bg-green-500 hover:text-black transition-all" >
                                         Subscribe
                                     </Button>
                                 </div>
-                            </div></div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
