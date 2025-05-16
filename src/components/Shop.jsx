@@ -89,17 +89,17 @@ const Shop = () => {
   const renderProductCards = (products) =>
     products.map((item) => (
 
-
       <div className="relative w-[330px] h-[305px] max-md:w-[220px] max-md:h-[200px] bg-[#1e1e1e] px-4 py-8 rounded-xl border-3 border-green-500">
         <div className="flex justify-between items-start gap-4 pr-[160px]">
 
-          <div className="flex-1 min-w-0  ">
-            <h3 className="text-white text-[27px] max-md:text-[22px] font-semibold lg:truncate max-sm:text-[12px]">
+          <div className="flex-1 lg:min-w-0 max-sm:min-w-[110px]">
+            <h3 className="text-white text-[27px] max-md:text-[22px] font-semibold lg:truncate max-lg:whitespace-normal max-sm:text-[12px]">
               {item.primaryText}
             </h3>
-            <p className="text-gray-400 text-[12px] max-md:text-[9px] mt-1 truncate  ">
+            <p className="text-gray-400 text-[12px] max-md:text-[9px] mt-1 lg:truncate max-lg:whitespace-normal">
               {item.secondaryText}
             </p>
+
             <p className="text-white text-xl max-md:text-sm font-bold mt-2">$34.00</p>
           </div>
 
