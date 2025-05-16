@@ -27,7 +27,7 @@ const Hero = () => {
             <Image src="/icon1.png" alt="emoji" width={35} height={20} className="pl-2" />
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl sm:text-5xl mt-10 md:text-6xl font-bold leading-tight ">
             Next Generation <br /> Charger Skins
           </h1>
 
