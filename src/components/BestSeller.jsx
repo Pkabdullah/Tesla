@@ -43,9 +43,10 @@ const BestSeller = () => {
 
   return (
     <section className="bg-[#45413c] text-white pb-8 pt-8 " >
-      <div className="bg-[url('/bsimg.png')] bg-no-repeat bg-cover bg-center w-full">
+      <div className="bg-[url('/bsimg.png')] bg-no-repeat bg-center bg-[length:100%_100%] sm:bg-cover w-full">
+
         <div className="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-10 justify-items-center space-y-8">
             {cardContent.map((item) => (
               <div data-aos="zoom-in"> <div
                 key={item.id}
@@ -74,11 +75,11 @@ const BestSeller = () => {
               </div>
               </div>
             ))}
-             
+
           </div>
-         
+
         </div>
-      
+
       </div>
     </section>
   );
