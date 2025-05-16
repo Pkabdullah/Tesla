@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -95,10 +94,10 @@ const Shop = () => {
         <div className="flex justify-between items-start gap-4 pr-[160px]">
 
           <div className="flex-1 min-w-0  ">
-            <h3 className="text-white text-[27px] max-md:text-[22px] font-semibold truncate">
+            <h3 className="text-white text-[27px] max-md:text-[22px] font-semibold lg:truncate max-sm:text-[12px]">
               {item.primaryText}
             </h3>
-            <p className="text-gray-400 text-[12px] max-md:text-[9px] mt-1 truncate">
+            <p className="text-gray-400 text-[12px] max-md:text-[9px] mt-1 truncate  ">
               {item.secondaryText}
             </p>
             <p className="text-white text-xl max-md:text-sm font-bold mt-2">$34.00</p>
@@ -138,21 +137,21 @@ const Shop = () => {
 
   return (
     <section className="bg-[#45413c] py-22 text-white" id="products">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-10 lg:px-20 py-10">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-10 lg:px-20 py-10 max-sm:py-0">
         <div className="flex justify-center mb-2">
           <h3 className="text-[17px] max-md:text-[15px]">Shop Now</h3>
           <Image src="/icon1.png" alt="UK Flag" width={35} height={20} className="pl-2" />
         </div>
 
         <div className="flex justify-center">
-          <h1 className="text-[50px] max-md:text-[35px] max-sm:text-center">
+          <h1 className="text-[50px] max-md:text-[35px] max-sm:text-[25px] max-sm:text-justify leading-tight">
             <span className="text-[#3af96e]">Power up</span> your journey with
             <br /> our cutting-edge <span className="text-[#3af96e]">EV chargers!</span>
           </h1>
         </div>
 
 
-        <div className="flex justify-center mt-22 gap-4 max-sm:flex-col max-sm:items-center">
+        <div className="flex justify-center mt-22 gap-4 max-sm:flex-col max-sm:items-center max-sm:space-y-10">
           {renderProductCards(productContent1)}
         </div>
 
@@ -172,7 +171,7 @@ const Shop = () => {
         </div>
 
 
-        <div className="flex justify-center mt-22 gap-4 max-sm:flex-col max-sm:items-center">
+        <div className="flex justify-center mt-22 gap-4 max-sm:flex-col max-sm:items-center  max-sm:space-y-10">
           {renderProductCards(productContent2)}
         </div>
 
@@ -192,7 +191,7 @@ const Shop = () => {
         </div>
 
 
-        <div className="flex justify-center mt-22 gap-4 max-sm:flex-col max-sm:items-center">
+        <div className="flex justify-center mt-22 gap-4 max-sm:flex-col max-sm:items-center  max-sm:space-y-10">
           {renderProductCards(productContent3)}
         </div>
       </div>
